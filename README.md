@@ -1,5 +1,4 @@
-Generate Figure 2(a)  
-'''
+#Generate Figure 2(a)  
 axs[0].plot(x, y2, color='orange', linewidth=1.6, linestyle='-')
 axs[0].scatter(30, g1(30), color='red', s=20, zorder=5)
 axs[0].axhline(y=threshold, color='red', linewidth=1.6, linestyle='--', label='Bottoming')   
@@ -15,9 +14,8 @@ axs[0].set_ylim(0, 1.4)
 axs[0].set_xlim(-3, 70)
 axs[0].xaxis.set_major_locator(plt.MaxNLocator(6))
 axs[0].yaxis.set_major_locator(plt.MaxNLocator(6))
-axs[0].yaxis.set_major_formatter(ticker.FormatStrFormatter('%.2f'))
-'''     
-Generate Figure 2(b)  
+axs[0].yaxis.set_major_formatter(ticker.FormatStrFormatter('%.2f'))     
+#Generate Figure 2(b)  
 '''
 axs[1].plot(x, y1 / np.pi, color='blue', linewidth=1.6, linestyle='-')
 axs[1].axvline(x=64, color='red', linewidth=1.6, linestyle='--',label='Bottoming')

@@ -1,5 +1,4 @@
 1.Generate Figure 2(a)  
-
 axs[0].plot(x, y2, color='orange', linewidth=1.6, linestyle='-')
 axs[0].scatter(30, g1(30), color='red', s=20, zorder=5)
 axs[0].axhline(y=threshold, color='red', linewidth=1.6, linestyle='--', label='Bottoming')   
@@ -17,7 +16,6 @@ axs[0].xaxis.set_major_locator(plt.MaxNLocator(6))
 axs[0].yaxis.set_major_locator(plt.MaxNLocator(6))
 axs[0].yaxis.set_major_formatter(ticker.FormatStrFormatter('%.2f'))   
 2.Generate Figure 2(b)  
-
 axs[1].plot(x, y1 / np.pi, color='blue', linewidth=1.6, linestyle='-')
 axs[1].axvline(x=64, color='red', linewidth=1.6, linestyle='--',label='Bottoming')
 if len(unstable_indices) > 0:
@@ -34,7 +32,6 @@ axs[1].xaxis.set_major_locator(plt.MaxNLocator(6))
 axs[1].yaxis.set_major_locator(plt.MaxNLocator(6))
 axs[1].yaxis.set_major_formatter(ticker.FormatStrFormatter('%.2f'))  
 3.Generate Figure 2(c)  
-
 axs[2].plot(x, y3 / np.pi, color='green', linewidth=1.6, linestyle='-') 
 axs[2].axvline(x=64, color='red', linewidth=1.6, linestyle='--',label='Bottoming')
 if len(unstable_indices) > 0:
@@ -51,7 +48,6 @@ axs[2].xaxis.set_major_locator(plt.MaxNLocator(6))
 axs[2].yaxis.set_major_locator(plt.MaxNLocator(6))
 axs[2].yaxis.set_major_formatter(ticker.FormatStrFormatter('%.2f'))
 4.Generate the illustration in Figure 2(a)  
-
 V0 = 1.5e-9  
 rho = 1e3 
 g = 9.8  
@@ -113,7 +109,6 @@ term2=gamma_1*((2*np.pi*r**2)/(1+np.cos(theta))+np.pi*(r+d*np.sin(beta))*np.sqrt
 gg2(30)
 plt.savefig('E.png', dpi=150)
 5.Generate the illustration in Figure 2(c)  
-
 def gg1(g1):
     idx = np.argmin(np.abs(x - g1))  
     b1=ARG[:, 0]%(2*np.pi)
